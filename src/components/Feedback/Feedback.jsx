@@ -1,18 +1,16 @@
 import { Component } from 'react';
 import styles from './feedback.module.css';
-import { render } from 'react-dom';
 import FeedbackActions from './FeedbackActions';
 import FeedbackResults from './FeedbackResults';
 import Block from 'components/Block/Block';
 
 class Feedback extends Component {
   static feedbackOptions = ['good', 'neutral', 'bad'];
-
   state = {
     good: 0,
     neutral: 0,
     bad: 0,
-  };
+  }
 
   countTotalFeedback() {
     const { good, neutral, bad } = this.state;
