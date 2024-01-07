@@ -1,6 +1,6 @@
 
 
-const FeedbackActions = ({options,addFeedback}) => {
+const FeedbackOptions = ({options,addFeedback}) => {
   const buttonElements = options.map(name => (
     <button onClick={() => addFeedback(name)} key={name}>
       {name}
@@ -10,4 +10,4 @@ const FeedbackActions = ({options,addFeedback}) => {
   return buttonElements;
 };
 
-export default FeedbackActions;
+export default FeedbackOptions;

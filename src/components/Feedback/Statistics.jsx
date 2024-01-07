@@ -1,5 +1,5 @@
 
-const FeedbackResults = ({ good, neutral, bad, total, feedback }) => {
+const Statistics = ({ good, neutral, bad, total, feedback }) => {
   return (
     <>
       <p>Good:{good}</p>
@@ -11,4 +11,4 @@ const FeedbackResults = ({ good, neutral, bad, total, feedback }) => {
   );
 };
 
-export default FeedbackResults;
+export default Statistics;

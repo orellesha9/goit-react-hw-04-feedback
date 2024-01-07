@@ -1,6 +1,6 @@
 import styles from './block.module.css';
 
-const Block = ({title, children}) => {
+const Section = ({title, children}) => {
   return (
     <div className={styles.block}>
       <h4 className={styles.blockTitle}>{title}</h4>
@@ -9,4 +9,4 @@ const Block = ({title, children}) => {
   );
 };
 
-export default Block;
+export default Section;
