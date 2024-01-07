@@ -5,7 +5,6 @@ import FeedbackActions from './FeedbackActions';
 import FeedbackResults from './FeedbackResults';
 import Block from 'components/Block/Block';
 
-
 class Feedback extends Component {
   static feedbackOptions = ['good', 'neutral', 'bad'];
 
@@ -49,13 +48,13 @@ class Feedback extends Component {
     const feedbackPercantage = this.countPositiveFeedbackPercentage('good');
     return (
       <div className={styles.wrapper}>
-        <Block title ={"Please leave feedback"}>
+        <Block title={'Please leave feedback'}>
           <FeedbackActions
             options={Feedback.feedbackOptions}
             addFeedback={this.addFeedback}
           />
         </Block>
-        <Block title ={"Statistics"}>
+        <Block title={'Statistics'}>
           {' '}
           <FeedbackResults
             total={total}
