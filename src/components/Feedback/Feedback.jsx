@@ -43,21 +43,6 @@ class Feedback extends Component {
 
     const total = this.countTotalFeedback();
 
-    function ifCounter(total) {
-      if (!total) {
-        return <Notification message="There is no feedback" total={total} />;
-      } else {
-        return (
-          <Statistics
-            total={total}
-            good={good}
-            bad={bad}
-            neutral={neutral}
-            feedback={feedbackPercantage}
-          />
-        );
-      }
-    }
     // const feedbackPercantage = Number((good / total).toFixed(2));
     const feedbackPercantage = this.countPositiveFeedbackPercentage('good');
     return (
