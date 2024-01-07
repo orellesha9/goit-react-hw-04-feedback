@@ -1,4 +1,4 @@
-import styles from './feedback.module.css';
+
 
 const FeedbackActions = ({options,addFeedback}) => {
   const buttonElements = options.map(name => (
