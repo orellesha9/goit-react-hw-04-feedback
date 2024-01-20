@@ -33,7 +33,7 @@ const Feedback = () => {
       ...prevFeedback,
       [keyName]: prevFeedback[keyName] + 1,
     }));
-  };
+  }; 
   const { good, neutral, bad } = feedback;
 
   const total = countTotalFeedback();
